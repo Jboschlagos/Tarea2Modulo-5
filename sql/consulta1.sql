@@ -2,7 +2,6 @@
 SELECT nombre, le_debo
 FROM finanzas_personales
 WHERE le_debo = (SELECT MAX(le_debo) FROM finanzas_personales);
-
 --segunda consulta
 SELECT nombre, me_debe
 FROM finanzas_personales
